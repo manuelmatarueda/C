@@ -5,10 +5,10 @@ unsigned const int BOLAS = 5;
 unsigned const int TEMAS_TOTALES = 65;
 unsigned const int TEMAS_ESTUDIADOS = 10;
 unsigned const int SIMULACIONES = 1000000;
-time_t t;
 
 void init() {
     /* Intializes random number generator */
+	time_t t;
     srand((unsigned) time(&t));
 }
 
