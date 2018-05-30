@@ -9,7 +9,7 @@ unsigned const int SIMULACIONES = 1000000;
 void init() {
     /* Intializes random number generator */
 	time_t t;
-    srand((unsigned) time(&t));
+	srand((unsigned) time(&t));
 }
 
 /* Devuelve el valor si el elemento ya existe en el array, 0 en caso contrario */
@@ -33,6 +33,7 @@ void imprimeArray(int array[], int size, char *s) {
 	printf("\n");
 }
 
+/* Carga el array con numero aleatorios no repetidos */
 void cargaArray(int array[], int size, int total) {
 	int n=0;
 	do {
@@ -58,9 +59,13 @@ int exito(int bolas[], int size_bolas, int temas_estudiados[], int size_temas_es
 	return 0;
 }
 
+
+
 /* main */
 
 int main() {
+	
+	
 	
 	int exitos=0;
 	int bolas[BOLAS];
