@@ -23,6 +23,7 @@ int existeEnArray(int array[], int size, int valor) {
 	return 0;
 }
 
+/* Imprime el array */
 void imprimeArray(int array[], int size, char *s) {
 	printf(s);
 	int i;
